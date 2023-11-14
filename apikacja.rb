@@ -1,8 +1,5 @@
-require 'sinatra'
-
-get '/' do
-    "Hello world!"
+class Apikacja < Sinatra::Base
+    get '/' do
+        "Hello world!"
+    end
 end
-
-
-# 1. gem install sinatra
