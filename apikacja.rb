@@ -1,5 +1,7 @@
 class Apikacja < Sinatra::Base
     get '/' do
+        file = File.read('./data.json')
+        @items = JSON.parse(file)
         erb :index
     end
 
